@@ -35,7 +35,6 @@ export default function Navbar() {
                             </details>
                         </ul>
                     </div>
-
                     {/* brand logo */}
                     <div><svg width="95" height="38" viewBox="0 0 153 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M110.549 36.9138V0.256348H118.854L144.797 26.6087V0.256348H153V36.9138H144.694L118.752 10.5102V36.9138H110.549Z" fill="#005397" />
