@@ -7,7 +7,7 @@ export default function Faq() {
 
     return (
         <div className="bg-white py-14">
-            <div className="max-w-[82rem] mx-auto space-y-10 px-6 md:px-0">
+            <div className="max-w-[82rem] mx-auto space-y-10 px-6 xl:px-0">
                 <div className="text-center space-y-2.5">
                     <h6 className="text-[#21763F]">Faq</h6>
                     <h3 className="text-xl md:text-3xl font-bold">Frequently asked questions</h3>

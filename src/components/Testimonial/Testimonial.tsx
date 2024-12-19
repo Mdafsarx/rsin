@@ -18,11 +18,11 @@ export default function Testimonial() {
 
             <div className="max-w-[82rem] mx-auto space-y-12">
 
-                <div className="flex flex-col md:flex-row items-center justify-between">
+                <div className="flex flex-col xl:flex-row items-center justify-between">
                     {/* text */}
-                    <div className="space-y-2 text-center md:text-start">
+                    <div className="space-y-2 text-center xl:text-start">
                         <h4 className="text-[#7CE4A1]">Testimonial</h4>
-                        <h2 className="text-xl md:text-3xl font-bold text-white leading-snug">For nearly 07 years, <br /> people have chosen <br /> VISAThing!</h2>
+                        <h2 className="text-xl xl:text-3xl font-bold text-white leading-snug">For nearly 07 years, <br /> people have chosen <br /> VISAThing!</h2>
                     </div>
                     {/* Carousel button */}
                     <div className="space-y-8 ">
@@ -59,11 +59,11 @@ export default function Testimonial() {
                 </div>
 
                 {/* small device */}
-                {carousel === 1 && <div className="flex md:hidden items-center justify-center ">
+                {carousel === 1 && <div className="flex xl:hidden items-center justify-center ">
                     <TestimonialCard name={'Razu Sardar'} title={'Fund Seeker'} position={'CEO of RSM'} date={'2 days ago'} comment={'Fast at letting me know I got approved for the loan. Fund deposit was fast.'} />
                 </div>}
                 {/* mid */}
-                {carousel === 1 && <div className="hidden md:flex items-center gap-3 ">
+                {carousel === 1 && <div className="hidden xl:flex items-center gap-3 ">
                     <TestimonialCard name={'Razu Sardar'} title={'Fund Seeker'} position={'CEO of RSM'} date={'2 days ago'} comment={'Fast at letting me know I got approved for the loan. Fund deposit was fast.'} />
                     <TestimonialCard name={'Arlene McCoy'} title={'Investor'} position={'CTO Of The Walt Disney Company'} date={'2 days ago'} comment={'Fast at letting me know I got approved for the loan. Fund deposit was fast.'} />
                     <TestimonialCard name={'Floyd Miles'} title={'Investor'} position={'MD Of Starbucks'} date={'2 days ago'} comment={'Fast at letting me know I got approved for the loan. Fund deposit was fast.'} />
@@ -72,11 +72,11 @@ export default function Testimonial() {
                 </div>}
 
                 {/* small device */}
-                {carousel === 2 && <div className="flex md:hidden items-center justify-center">
+                {carousel === 2 && <div className="flex xl:hidden items-center justify-center">
                     <TestimonialCard name={'Rayan Dal'} title={'Fund Seeker'} position={'MD Of Starbucks'} date={'2 days ago'} comment={'Fast at letting me know I got approved for the loan. Fund deposit was fast.'} />
                 </div>}
                 {/* mid */}
-                {carousel === 2 && <div className="hidden md:flex items-center gap-3 ">
+                {carousel === 2 && <div className="hidden xl:flex items-center gap-3 ">
                     <TestimonialCard name={'Rayan Dal'} title={'Fund Seeker'} position={'MD Of Starbucks'} date={'2 days ago'} comment={'Fast at letting me know I got approved for the loan. Fund deposit was fast.'} />
                     <TestimonialCard name={'Team baners'} title={'Createor'} position={'CTO of PTSR'} date={'2 days ago'} comment={'Fast at letting me know I got approved for the loan. Fund deposit was fast.'} />
                     <TestimonialCard name={'Nazmul hasan'} title={'Fund Seeker'} position={'CTO of RSM'} date={'2 days ago'} comment={'Fast at letting me know I got approved for the loan. Fund deposit was fast.'} />
@@ -85,11 +85,11 @@ export default function Testimonial() {
                 </div>}
 
                 {/* small device */}
-                {carousel === 3 && <div className="flex md:hidden items-center justify-center  ">
+                {carousel === 3 && <div className="flex xl:hidden items-center justify-center  ">
                     <TestimonialCard name={'Razu Sardar'} title={'Fund Seeker'} position={'CEO of RSM'} date={'2 days ago'} comment={'Fast at letting me know I got approved for the loan. Fund deposit was fast.'} />
                 </div>}
                 {/* mid */}
-                {carousel === 3 && <div className="hidden md:flex items-center gap-3 ">
+                {carousel === 3 && <div className="hidden xl:flex items-center gap-3 ">
                     <TestimonialCard name={'Razu Sardar'} title={'Fund Seeker'} position={'CEO of RSM'} date={'2 days ago'} comment={'Fast at letting me know I got approved for the loan. Fund deposit was fast.'} />
                     <TestimonialCard name={'Arlene McCoy'} title={'Investor'} position={'CTO Of The Walt Disney Company'} date={'2 days ago'} comment={'Fast at letting me know I got approved for the loan. Fund deposit was fast.'} />
                     <TestimonialCard name={'Floyd Miles'} title={'Investor'} position={'MD Of Starbucks'} date={'2 days ago'} comment={'Fast at letting me know I got approved for the loan. Fund deposit was fast.'} />

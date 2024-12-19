@@ -5,7 +5,7 @@ import { HiArrowLongRight } from "react-icons/hi2";
 export default function TrustedBy() {
     return (
         <div>
-            <h3 className="text-gray-400 hidden md:flex items-center gap-2">Feature in Trusted by <HiArrowLongRight className="text-3xl" /></h3>
+            <h3 className="text-gray-400 hidden xl:flex items-center gap-2">Feature in Trusted by <HiArrowLongRight className="text-3xl" /></h3>
            <Marquee>
              <div className="flex items-center gap-x-28 py-7">
                  <img src="https://res.cloudinary.com/dz1fy2tof/image/upload/v1734485364/svgexport-1_1_n7vjbg.png" alt="" className="ml-16"/>

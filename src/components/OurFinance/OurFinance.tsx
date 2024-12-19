@@ -1,6 +1,6 @@
 export default function OurFinance() {
     return (
-        <div className="flex flex-col md:flex-row items-center gap-8 max-w-[82rem] mx-auto px-6 md:px-0">
+        <div className="flex flex-col md:flex-row items-center gap-8 max-w-[82rem] mx-auto px-6 xl:px-0">
 
             {/* images */}
             <div className="bg-[#EFF1F5] py-8 mt-3 md:w-1/2 rounded-2xl flex items-center">
@@ -21,7 +21,7 @@ export default function OurFinance() {
                 <div className="*:text-[#7D89B0]">
                     <div className="border-y border-gray-200 py-3 pl-4">
                         <h3 className="text-[#005397] pb-1.5">Business Expansion</h3>
-                        <p className="text-[#4A5578]">Scale your business by adding new products, service or open <br /> new branch</p>
+                        <p className="text-[#4A5578] text-balance">Scale your business by adding new products, service or open <br /> new branch</p>
                     </div>
                     <p className="border-b border-gray-200 py-3 pl-4">Upgrade Your Premises</p>
                     <p className="border-b border-gray-200 py-3 pl-4">Marketing</p>

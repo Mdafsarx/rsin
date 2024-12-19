@@ -8,7 +8,7 @@ export default function Navbar() {
 
     return (
         <div className="border-b bg-[#FFFFFF]">
-            <div className="navbar max-w-[82rem] mx-auto py-4">
+            <div className="navbar max-w-[82rem] mx-auto py-4 md:px-6 xl:px-0">
 
                 {/* logo and page-link for small device */}
                 <div className="navbar-start">
@@ -74,7 +74,7 @@ export default function Navbar() {
                 {/* login and apply now button */}
                 <div className="navbar-end flex items-center gap-x-10 pr-4 md:pr-0">
                     <button className="text-[#005397] hover:underline">Login</button>
-                    <button className="btn bg-[#005397] hover:bg-[white] hover:border-[#005397] hover:text-black  rounded-full text-white font-normal hidden md:block">Apply Now</button>
+                    <button className="btn bg-[#005397] hover:bg-[white] hover:border-[#005397] hover:text-black  rounded-full text-white font-normal hidden xl:block">Apply Now</button>
                 </div>
 
             </div>

@@ -2,18 +2,18 @@ import { FaPlay } from "react-icons/fa6";
 
 export default function InvestorAndBusinesses() {
     return (
-        <div className="max-w-[82rem] mx-auto space-y-6 px-6 md:px-0">
+        <div className="max-w-[82rem] mx-auto space-y-6 px-6 xl:px-0">
             {/* title */}
             <div className="w-full h-60 p-6 bg-white space-y-2.5 rounded-2xl">
                 <h3 className="text-[#21763F]">How it Works</h3>
-                <p className="text-2xl md:text-3xl font-bold leading-snug text-balance">Our Process <br />
+                <p className="text-2xl xl:text-3xl font-bold leading-snug text-balance">Our Process <br />
                     for Investors <br />
                     and Businesses</p>
             </div>
             {/* investor and businesses */}
-            <div className="flex flex-col md:flex-row gap-6 ">
+            <div className="flex flex-col xl:flex-row gap-6 ">
                 {/* investors */}
-                <div className="md:w-1/2 h-full bg-white rounded-2xl p-5 space-y-4">
+                <div className="xl:w-1/2 h-full bg-white rounded-2xl p-5 space-y-4">
                     <h1 className="text-lg font-medium">For Investors</h1>
                     {/* brand logo */}
                     <div className="flex items-center justify-center pb-4">
@@ -88,7 +88,7 @@ export default function InvestorAndBusinesses() {
                 </div>
 
                 {/* Businesses */}
-                <div className="md:w-1/2 h-full bg-white rounded-2xl p-5 space-y-4">
+                <div className="xl:w-1/2 h-full bg-white rounded-2xl p-5 space-y-4">
                     <h1 className="text-lg font-medium">For Businesses</h1>
                     {/* brand logo */}
                     <div className="flex items-center justify-center pb-4">

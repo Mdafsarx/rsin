@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="bg-white">
             <div className="max-w-[82rem] mx-auto">
                 {/* top part */}
-                <footer className="footer text-base-content pb-20 pt-12 pl-6 md:pl-0">
+                <footer className="footer text-base-content pb-20 pt-12 pl-6 xl:pl-0">
                     <div className="space-y-1.5">
                         {/* brand logo */}
                         <Link href={'/'}><svg width="95" height="38" viewBox="0 0 153 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,14 +36,14 @@ export default function Footer() {
                         <a className="link link-hover">Key Principles & Rules</a>
                         <a className="link link-hover">Complains and suggestions</a>
                     </nav>
-                    <div>
+                    <div className="md:hidden xl:flex flex-col">
                         <h6 className="text-[16px] text-[#111322] font-semibold">Action</h6>
                         <button className="btn text-white rounded-full font-normal bg-[#005397] hover:bg-[#005397] w-36">Start Investing</button>
                         <button className="btn text-black rounded-full font-medium btn-outline border-[#005397] hover:bg-white hover:border-[#005397] hover:text-black w-36 mt-2">Get Funded</button>
                     </div>
                 </footer>
                 {/* bottom part */}
-                <footer className="footer gap-10 md:gap-44 text-base-content border-base-300 border-t pb-20 pt-12 pl-6 md:pl-0">
+                <footer className="footer gap-10 md:gap-44 text-base-content border-base-300 border-t pb-20 pt-12 pl-6 xl:pl-0">
                     <div className="space-y-1.5">
                         <h6 className="text-[16px] text-[#111322] font-semibold">Contact Us</h6>
                         <p>Email: <span className="text-[#005397]"> contactus@rsin.com</span></p>
