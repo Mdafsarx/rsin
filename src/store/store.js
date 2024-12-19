@@ -1,8 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
+import carouselReducer from '../store/carouselSlice';
 
 
-export const store = configureStore({
+
+const store = configureStore({
     reducer: {
-
+        carousel: carouselReducer
     },
 })
+
+export default store

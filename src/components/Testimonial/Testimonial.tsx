@@ -1,10 +1,17 @@
 'use client'
-import { useState } from "react"
 import TestimonialCard from "./TestimonialCard"
+import { useDispatch, useSelector } from "react-redux";
+import { decrement, increment } from "@/store/carouselSlice";
+
+interface redux {
+    carousel: { value: number };
+}
 
 export default function Testimonial() {
 
-    const [carousel, setCarousel] = useState(1)
+    const carousel = useSelector((state: redux) => state.carousel.value);
+    const dispatch = useDispatch();
+
 
     return (
         <div className="bg-[#005397] py-[4.5rem] min-h-[550px]">
@@ -20,7 +27,7 @@ export default function Testimonial() {
                     {/* Carousel button */}
                     <div className="space-y-8">
                         <p className="flex items-center gap-1.5 text-white">
-                            See our <span className="font-bold underline">2000 reviews</span> on <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            See our <span className="font-bold underline cursor-pointer">2000 reviews</span> on <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11.6226 16.7767L16.673 15.4969L18.783 22L11.6226 16.7767ZM23.2453 8.37107H14.3553L11.6226 0L8.88994 8.37107H0L7.19497 13.5597L4.46226 21.9308L11.6572 16.7421L16.0849 13.5597L23.2453 8.37107Z" fill="#37C368" />
                             </svg> Trustpilot
                         </p>
@@ -28,7 +35,7 @@ export default function Testimonial() {
                             <button
                                 onClick={() => {
                                     if (carousel === 1) return
-                                    setCarousel(prev => prev - 1)
+                                    dispatch(decrement())
                                 }}
                                 className={`${carousel === 1 ? 'bg-[#ffffffCC]' : 'bg-white'} p-3 rounded-xl`}>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +46,7 @@ export default function Testimonial() {
                             <button
                                 onClick={() => {
                                     if (carousel === 3) return
-                                    setCarousel(prev => prev + 1)
+                                    dispatch(increment())
                                 }}
                                 className={`${carousel === 3 ? 'bg-[#ffffffCC]' : 'bg-white'} p-3 rounded-xl`}>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
