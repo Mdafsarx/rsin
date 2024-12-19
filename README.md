@@ -1,6 +1,6 @@
 # RSIN
 ## Live Site
-- [live site]()
+- [live site](https://rsin-zeta.vercel.app)
 
 ## Getting Started
 
