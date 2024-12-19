@@ -4,6 +4,7 @@ import OurFinance from '@/components/OurFinance/OurFinance';
 import Testimonial from '@/components/Testimonial/Testimonial';
 import InvestorAndBusinesses from '@/components/InvestorAndBussines/InvestorAndBusinesses';
 import Information from '@/components/Information/Information';
+import Faq from '@/components/Faq/Faq';
 
 export default function Home() {
   return (
@@ -13,7 +14,10 @@ export default function Home() {
       <OurFinance />
       <Testimonial />
       <InvestorAndBusinesses />
-      <Information />
+      <div>
+        <Information />
+        <Faq />
+      </div>
     </div>
   );
 }

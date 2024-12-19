@@ -1,4 +1,11 @@
+'use client'
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
 export default function Navbar() {
+
+    const pathName = usePathname();
+
     return (
         <div className="border-b bg-[#FFFFFF]">
             <div className="navbar max-w-[82rem] mx-auto py-4">
@@ -22,17 +29,19 @@ export default function Navbar() {
                             </svg>
                         </div>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Home</a></li>
-                            <li><a>For Business</a></li>
-                            <li><a>For Investors</a></li>
-                            <li><a>Financing Rates</a></li>
-                            <details>
-                                <summary>Others</summary>
-                                <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </details>
+                            <li><Link href={'/'} className={pathName === '/' ? 'btn btn-sm bg-[#A5ECBE] font-medium' : ''}>Home</Link></li>
+                            <li><Link href={'/For-Business'} className={pathName === '/For-Business' ? 'btn btn-sm bg-[#A5ECBE] font-medium' : ''}>For Business</Link></li>
+                            <li><Link href={'/For-Investors'} className={pathName === '/For-Investors' ? 'btn btn-sm bg-[#A5ECBE] font-medium' : ''}>For Investors</Link></li>
+                            <li><Link href={'/Financing-Rates'} className={pathName === '/Financing-Rates' ? 'btn btn-sm bg-[#A5ECBE] font-medium' : ''}>Financing Rates</Link></li>
+                            <li>
+                                <details>
+                                    <summary>Others</summary>
+                                    <ul className="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </details>
+                            </li>
                         </ul>
                     </div>
                     {/* brand logo */}
@@ -43,15 +52,14 @@ export default function Navbar() {
                         <path d="M0 36.9138V0.256348H30.7102C34.5041 0.256348 37.4436 1.21337 39.5285 3.12742C41.6477 5.04147 42.7072 7.94672 42.7072 11.8432C42.7072 15.1586 41.9382 17.7562 40.4001 19.6361C38.862 21.516 36.6745 22.6952 33.8376 23.1737L42.2971 36.9138H32.9661L25.1219 23.43H8.20307V36.9138H0ZM29.7361 6.92134H8.20307V16.7138L29.7361 16.765C31.24 16.765 32.385 16.389 33.1711 15.6371C33.9915 14.8852 34.4016 13.6205 34.4016 11.8432C34.4016 10.0317 33.9915 8.76703 33.1711 8.04926C32.385 7.29731 31.24 6.92134 29.7361 6.92134Z" fill="#005397" />
                     </svg>
                     </div>
-
                 </div>
                 {/* center page links */}
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
-                        <li><a>Home</a></li>
-                        <li><a>For Business</a></li>
-                        <li><a>For Investors</a></li>
-                        <li><a>Financing Rates</a></li>
+                    <ul className="menu menu-horizontal px-1 space-x-3 flex items-center">
+                        <li><Link href={'/'} className={pathName === '/' ? 'btn btn-sm bg-[#A5ECBE] font-medium' : ''}>Home</Link></li>
+                        <li><Link href={'/For-Business'} className={pathName === '/For-Business' ? 'btn btn-sm bg-[#A5ECBE] font-medium' : ''}>For Business</Link></li>
+                        <li><Link href={'/For-Investors'} className={pathName === '/For-Investors' ? 'btn btn-sm bg-[#A5ECBE] font-medium' : ''}>For Investors</Link></li>
+                        <li><Link href={'/Financing-Rates'} className={pathName === '/Financing-Rates' ? 'btn btn-sm bg-[#A5ECBE] font-medium' : ''}>Financing Rates</Link></li>
                         <li>
                             <details>
                                 <summary>Others</summary>

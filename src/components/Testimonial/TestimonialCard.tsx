@@ -9,7 +9,7 @@ type Testimonial = {
 export default function TestimonialCard({ name, title, position, date, comment }: Testimonial) {
     return (
         <div>
-            <div className="w-[16.2rem] h-[16.5rem] p-4 bg-white rounded-2xl space-y-1">
+            <div className="w-[15.85rem] h-[16.5rem] p-4 bg-white rounded-2xl space-y-1">
                 <div className="flex items-center justify-between">
                     <h3 className="font-semibold">{name}</h3>
                     <button className="bg-[#A5ECBE] px-2 py-2 rounded-full text-xs font-semibold">{title}</button>
